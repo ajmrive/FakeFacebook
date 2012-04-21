@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
   
   #validaciones de los campos
   #validates_presence_of :body, :user
-  validates :body, :user, presence => true
+  validates :body, :user, :presence => true
   
   
 end
