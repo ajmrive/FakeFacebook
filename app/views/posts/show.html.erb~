@@ -2,7 +2,7 @@
 
 <p>
   <h2>User:</h2>
-  <%= @post.user %>
+  <%= @post.users_name %>
 </p>
 
 <p>
@@ -12,6 +12,7 @@
 
 <p>
     <h2>Comentarios:</h2>
+    <hr>
     <%= render @post.comments %>
 </p>
 

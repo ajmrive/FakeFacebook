@@ -1,3 +1,5 @@
+
+<h1> Escribe aqui un comentario</h1>
 <%= form_for([@post, @comment]) do |f| %>
   
 
