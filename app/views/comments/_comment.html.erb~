@@ -1,0 +1,9 @@
+<p>
+  <h2>User:</h2>
+  <%= comment.user %>
+</p>
+
+<p>
+  <h2>Comentario:</h2>
+  <%= comment.body %>
+</p>
