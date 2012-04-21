@@ -1825,3 +1825,2283 @@ Served asset /posts.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 12:33:08 +0100
 Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:44:03 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (144.7ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEXPLAIN (25.2ms)[0m  [1mEXPLAIN QUERY PLAN SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+EXPLAIN for: SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1 [["id", "1"]]
+0|0|TABLE posts USING PRIMARY KEY
+
+  Rendered comments/_form.html.erb (701.6ms)
+  Rendered posts/show.html.erb within layouts/application (1063.5ms)
+Completed 200 OK in 3904ms (Views: 2048.1ms | ActiveRecord: 169.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 12:44:10 +0100
+Served asset /application.css - 304 Not Modified (1153ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /comments.css - 304 Not Modified (66ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /home.css - 304 Not Modified (73ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /posts.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /scaffolds.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /jquery.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (69ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /comments.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /posts.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /home.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 12:44:12 +0100
+Served asset /application.js - 304 Not Modified (48ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:46:37 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (76.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mComment Load (18.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1[0m
+  Rendered comments/_form.html.erb (37.3ms)
+  Rendered posts/show.html.erb within layouts/application (276.9ms)
+Completed 200 OK in 635ms (Views: 409.4ms | ActiveRecord: 95.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 12:46:38 +0100
+Served asset /application.css - 304 Not Modified (122ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 12:46:38 +0100
+Served asset /comments.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 12:46:38 +0100
+Served asset /home.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 12:46:39 +0100
+Served asset /posts.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 12:46:39 +0100
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 12:46:39 +0100
+Served asset /scaffolds.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 12:46:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (69ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 12:46:39 +0100
+Served asset /comments.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 12:46:39 +0100
+Served asset /home.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 12:46:39 +0100
+Served asset /posts.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 12:46:39 +0100
+Served asset /application.js - 304 Not Modified (65ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:48:20 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mComment Load (8.9ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1[0m
+  Rendered posts/show.html.erb within layouts/application (295.8ms)
+Completed 500 Internal Server Error in 402ms
+
+ActionView::Template::Error (undefined method `user' for #<ActiveRecord::Relation:0x9e74448>):
+    13: <p>
+    14:   <h2>Comentario:</h2>
+    15:     <b>autor:</b>
+    16:     <%= @post.comments.user %>
+    17:     <b>dijo:</b>
+    18:     <%= @post.comments.body %>
+    19: </p>
+  app/views/posts/show.html.erb:16:in `_app_views_posts_show_html_erb__24598676_84718320'
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (104.8ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (83.7ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (300.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:48:52 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1 LIMIT 1
+  Rendered comments/_form.html.erb (2523.3ms)
+  Rendered posts/show.html.erb within layouts/application (2641.3ms)
+Completed 200 OK in 2737ms (Views: 2704.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 12:48:55 +0100
+Served asset /application.css - 304 Not Modified (135ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 12:48:56 +0100
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 12:48:56 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 12:48:56 +0100
+Served asset /jquery.js - 304 Not Modified (90ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 12:48:56 +0100
+Served asset /posts.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 12:48:56 +0100
+Served asset /comments.css - 304 Not Modified (76ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 12:48:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 12:48:57 +0100
+Served asset /comments.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 12:48:57 +0100
+Served asset /home.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 12:48:57 +0100
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 12:48:57 +0100
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:51:38 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1
+  Rendered posts/show.html.erb within layouts/application (264.8ms)
+Completed 500 Internal Server Error in 297ms
+
+ActionView::Template::Error (undefined method `comment_path' for #<#<Class:0x9cfed20>:0xa014320>):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= form_for(@post.comments) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__24598676_79823860'
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (29.8ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (74.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:52:35 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered posts/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= form_for([@post, @comments]) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__24598676_80619970'
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (64.4ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (105.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:53:20 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (12.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered posts/show.html.erb within layouts/application (629.9ms)
+Completed 500 Internal Server Error in 649ms
+
+ActionView::Template::Error (undefined method `user' for #<ActionView::Helpers::FormBuilder:0x9eda43c>):
+    14:   <%= form_for([@post, @comment]) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+    18:       <b>dijo:</b>
+    19:       <%= f.body %>
+    20:   <% end %>
+  app/views/posts/show.html.erb:17:in `block in _app_views_posts_show_html_erb__24598676_84047980'
+  app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__24598676_84047980'
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (32.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (56.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:54:03 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (23.8ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+ERROR: compiling _app_views_posts_show_html_erb__24598676_80882340 RAISED /home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...end=  for([@post, @comment]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_posts_show_html_erb__24598676_80882340(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>User:</h2>
+  ');@output_buffer.append= ( @post.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>Body:</h2>
+  ');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append=  for([@post, @comment]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <h2>Comentario:</h2>
+      <b>autor:</b>
+      ');@output_buffer.append= ( f.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <b>dijo:</b>
+      ');@output_buffer.append= ( f.body );@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( render 'comments/form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Edit', edit_post_path(@post) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', posts_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/controllers/posts_controller.rb:21:in `show'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:425:in `_run__887557746__process_action__315574763__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__703761218__call__985543319__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered posts/show.html.erb within layouts/application (32.9ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionView::Template::Error (/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...end=  for([@post, @comment]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= for([@post, @comment]) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (35.4ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.5ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (105.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:54:15 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_posts_show_html_erb__24598676_78534720 RAISED /home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...ppend=  for([@post.comment]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_posts_show_html_erb__24598676_78534720(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>User:</h2>
+  ');@output_buffer.append= ( @post.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>Body:</h2>
+  ');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append=  for([@post.comment]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <h2>Comentario:</h2>
+      <b>autor:</b>
+      ');@output_buffer.append= ( f.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <b>dijo:</b>
+      ');@output_buffer.append= ( f.body );@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( render 'comments/form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Edit', edit_post_path(@post) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', posts_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/controllers/posts_controller.rb:21:in `show'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:425:in `_run__887557746__process_action__315574763__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__703761218__call__985543319__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered posts/show.html.erb within layouts/application (51.3ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...ppend=  for([@post.comment]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= for([@post.comment]) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (63.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (113.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:54:28 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+ERROR: compiling _app_views_posts_show_html_erb__24598676_76957580 RAISED /home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...pend=  for([@post.comments]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_posts_show_html_erb__24598676_76957580(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>User:</h2>
+  ');@output_buffer.append= ( @post.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>Body:</h2>
+  ');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append=  for([@post.comments]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <h2>Comentario:</h2>
+      <b>autor:</b>
+      ');@output_buffer.append= ( f.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <b>dijo:</b>
+      ');@output_buffer.append= ( f.body );@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( render 'comments/form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Edit', edit_post_path(@post) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', posts_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/controllers/posts_controller.rb:21:in `show'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:425:in `_run__887557746__process_action__315574763__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__703761218__call__985543319__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered posts/show.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...pend=  for([@post.comments]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= for([@post.comments]) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (31.1ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (68.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:54:29 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_posts_show_html_erb__24598676_76957580 RAISED /home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...pend=  for([@post.comments]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_posts_show_html_erb__24598676_76957580(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>User:</h2>
+  ');@output_buffer.append= ( @post.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>Body:</h2>
+  ');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append=  for([@post.comments]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <h2>Comentario:</h2>
+      <b>autor:</b>
+      ');@output_buffer.append= ( f.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <b>dijo:</b>
+      ');@output_buffer.append= ( f.body );@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( render 'comments/form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Edit', edit_post_path(@post) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', posts_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/controllers/posts_controller.rb:21:in `show'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:425:in `_run__887557746__process_action__315574763__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__703761218__call__985543319__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered posts/show.html.erb within layouts/application (42.3ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...pend=  for([@post.comments]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= for([@post.comments]) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (39.1ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:54:29 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+ERROR: compiling _app_views_posts_show_html_erb__24598676_76957580 RAISED /home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...pend=  for([@post.comments]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_posts_show_html_erb__24598676_76957580(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>User:</h2>
+  ');@output_buffer.append= ( @post.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>Body:</h2>
+  ');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append=  for([@post.comments]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <h2>Comentario:</h2>
+      <b>autor:</b>
+      ');@output_buffer.append= ( f.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <b>dijo:</b>
+      ');@output_buffer.append= ( f.body );@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( render 'comments/form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Edit', edit_post_path(@post) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', posts_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/controllers/posts_controller.rb:21:in `show'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:425:in `_run__887557746__process_action__315574763__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__703761218__call__985543319__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered posts/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...pend=  for([@post.comments]) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= for([@post.comments]) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (19.7ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (54.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:55:53 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (27.3ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_posts_show_html_erb__24598676_85146380 RAISED /home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...append=  for(@post.comments) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_posts_show_html_erb__24598676_85146380(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>User:</h2>
+  ');@output_buffer.append= ( @post.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>Body:</h2>
+  ');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append=  for(@post.comments) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <h2>Comentario:</h2>
+      <b>autor:</b>
+      ');@output_buffer.append= ( f.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <b>dijo:</b>
+      ');@output_buffer.append= ( f.body );@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( render 'comments/form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Edit', edit_post_path(@post) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', posts_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/controllers/posts_controller.rb:21:in `show'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:425:in `_run__887557746__process_action__315574763__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__703761218__call__985543319__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered posts/show.html.erb within layouts/application (20.8ms)
+Completed 500 Internal Server Error in 137ms
+
+ActionView::Template::Error (/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+...append=  for(@post.comments) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= for(@post.comments) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.7ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (60.1ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 12:56:17 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+ERROR: compiling _app_views_posts_show_html_erb__24598676_84285870 RAISED /home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+....append=  for(@post.comment) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_posts_show_html_erb__24598676_84285870(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>User:</h2>
+  ');@output_buffer.append= ( @post.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <h2>Body:</h2>
+  ');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append=  for(@post.comment) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <h2>Comentario:</h2>
+      <b>autor:</b>
+      ');@output_buffer.append= ( f.user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <b>dijo:</b>
+      ');@output_buffer.append= ( f.body );@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( render 'comments/form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Edit', edit_post_path(@post) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', posts_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/controllers/posts_controller.rb:21:in `show'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:425:in `_run__887557746__process_action__315574763__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__703761218__call__985543319__callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/user/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered posts/show.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:14: syntax error, unexpected keyword_do, expecting tCOLON2 or '[' or '.'
+....append=  for(@post.comment) do |f| @output_buffer.safe_conc...
+...                               ^
+/home/user/CURSO/CursoRubyOnRails/MiFacebook/FakeFacebook/app/views/posts/show.html.erb:28: syntax error, unexpected keyword_ensure, expecting $end):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= for(@post.comment) do |f| %>
+    15:     <h2>Comentario:</h2>
+    16:       <b>autor:</b>
+    17:       <%= f.user %>
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (726.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (802.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 13:03:44 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mComment Load (14.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1[0m
+  Rendered comments/_comment.html.erb (1.3ms)
+  Rendered comments/_form.html.erb (18.2ms)
+  Rendered posts/show.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 172ms (Views: 105.9ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:03:44 +0100
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /jquery.js - 304 Not Modified (67ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /posts.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /comments.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /posts.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:03:45 +0100
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2012-04-21 13:04:05 +0100
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"umu4yRuMaXVeRh5IFqJL5AlnlgVLcym/KwEO/2BK7VU=", "comment"=>{"user"=>"yo", "body"=>"te digo"}, "commit"=>"Create Comment", "post_id"=>"1"}
+  [1m[35mPost Load (14.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (21.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (71.0ms)[0m  INSERT INTO "comments" ("body", "created_at", "post_id", "updated_at", "user") VALUES (?, ?, ?, ?, ?)  [["body", "te digo"], ["created_at", Sat, 21 Apr 2012 12:04:05 UTC +00:00], ["post_id", 1], ["updated_at", Sat, 21 Apr 2012 12:04:05 UTC +00:00], ["user", "yo"]]
+  [1m[36m (78.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed 302 Found in 243ms (ActiveRecord: 185.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 13:04:05 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1[0m
+  Rendered comments/_comment.html.erb (0.3ms)
+  Rendered comments/_form.html.erb (5.4ms)
+  Rendered posts/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /comments.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /home.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /comments.js - 304 Not Modified (155ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /home.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /application.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 13:04:52 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1[0m
+  Rendered comments/_comment.html.erb (16.9ms)
+  Rendered comments/_form.html.erb (20.2ms)
+  Rendered posts/show.html.erb within layouts/application (67.6ms)
+Completed 200 OK in 154ms (Views: 135.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:52 +0100
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:52 +0100
+Served asset /comments.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:52 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:52 +0100
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:04:52 +0100
+Served asset /scaffolds.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:53 +0100
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:53 +0100
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:53 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:53 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:53 +0100
+Served asset /posts.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:04:53 +0100
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-04-21 13:05:21 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1[0m
+  Rendered comments/_comment.html.erb (1.1ms)
+  Rendered comments/_form.html.erb (23.0ms)
+  Rendered posts/show.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 117ms (Views: 105.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /jquery.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /comments.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:05:22 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20120421092229)
+Migrating to CreateComments (20120421111045)
+Migrating to CreateUsers (20120421121213)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120421121213')[0m
+  [1m[35m (5163.0ms)[0m  commit transaction
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/name" for 127.0.0.1 at 2012-04-21 13:13:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/name"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2012-04-21 13:13:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-21 13:14:59 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 65ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:5:in `index'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (53.8ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (106.2ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2012-04-21 13:15:10 +0100
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-21 13:15:14 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 18ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:5:in `index'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (44.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (95.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-21 13:17:46 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 50ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:5:in `index'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (26.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (107.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20120421092229)
+Migrating to CreateComments (20120421111045)
+Migrating to CreateUsers (20120421121213)
+  [1m[35m (1.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (10.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120421121213')[0m
+  [1m[35m (154.5ms)[0m  commit transaction
+Migrating to FixPostsAndCommentsReferencesToUsers (20120421121448)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20120421092229)
+Migrating to CreateComments (20120421111045)
+Migrating to CreateUsers (20120421121213)
+Migrating to FixPostsAndCommentsReferencesToUsers (20120421121448)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20120421092229)
+Migrating to CreateComments (20120421111045)
+Migrating to CreateUsers (20120421121213)
+Migrating to FixPostsAndCommentsReferencesToUsers (20120421121448)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20120421092229)
+Migrating to CreateComments (20120421111045)
+Migrating to CreateUsers (20120421121213)
+Migrating to FixPostsAndCommentsReferencesToUsers (20120421121448)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20120421092229)
+Migrating to CreateComments (20120421111045)
+Migrating to CreateUsers (20120421121213)
+Migrating to FixPostsAndCommentsReferencesToUsers (20120421121448)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (56.6ms)[0m  CREATE TEMPORARY TABLE "altered_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "posts"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "altered_posts" ("id","user","body","created_at","updated_at") VALUES (1, 'Pepe', 'hola mundo primer postaa', '2012-04-21 09:35:12.576668', '2012-04-21 09:36:19.031378')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_posts" ("id","user","body","created_at","updated_at") VALUES (3, NULL, NULL, '2012-04-21 09:43:57.828283', '2012-04-21 09:43:57.828283')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_posts" ("id","user","body","created_at","updated_at") VALUES (4, 'juanito', 'hola holita', '2012-04-21 09:53:16.870535', '2012-04-21 09:53:16.870535')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "altered_posts" ("id","user","body","created_at","updated_at") VALUES (5, 'pepe', 'prueba show', '2012-04-21 10:57:07.707386', '2012-04-21 10:57:07.707386')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_posts" ("id","user","body","created_at","updated_at") VALUES (6, 'hola', 'te dice hola', '2012-04-21 11:07:02.054627', '2012-04-21 11:07:02.054627')[0m
+  [1m[35m (71.6ms)[0m  DROP TABLE "posts"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("altered_posts")
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "altered_posts"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "posts" ("id","body","created_at","updated_at") VALUES (1, 'hola mundo primer postaa', '2012-04-21 09:35:12.576668', '2012-04-21 09:36:19.031378')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "posts" ("id","body","created_at","updated_at") VALUES (3, NULL, '2012-04-21 09:43:57.828283', '2012-04-21 09:43:57.828283')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "posts" ("id","body","created_at","updated_at") VALUES (4, 'hola holita', '2012-04-21 09:53:16.870535', '2012-04-21 09:53:16.870535')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "posts" ("id","body","created_at","updated_at") VALUES (5, 'prueba show', '2012-04-21 10:57:07.707386', '2012-04-21 10:57:07.707386')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "posts" ("id","body","created_at","updated_at") VALUES (6, 'te dice hola', '2012-04-21 11:07:02.054627', '2012-04-21 11:07:02.054627')
+  [1m[36m (1.3ms)[0m  [1mDROP TABLE "altered_posts"[0m
+  [1m[35m (3.2ms)[0m  ALTER TABLE "posts" ADD "user_id" integer
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "altered_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user" varchar(255), "body" text, "post_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (29.8ms)[0m  PRAGMA index_list("comments")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_comments_on_post_id')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("altered_comments")
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "temp_index_altered_comments_on_post_id" ON "altered_comments" ("post_id")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "comments"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_comments" ("id","user","body","post_id","created_at","updated_at") VALUES (1, 'pepe', 'pepe comenta', 1, '2012-04-21 11:32:58.113221', '2012-04-21 11:32:58.113221')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_comments" ("id","user","body","post_id","created_at","updated_at") VALUES (2, 'yo', 'te digo', 1, '2012-04-21 12:04:05.677171', '2012-04-21 12:04:05.677171')
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "comments"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "post_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("altered_comments")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('temp_index_altered_comments_on_post_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("comments")[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_comments"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "comments" ("id","body","post_id","created_at","updated_at") VALUES (1, 'pepe comenta', 1, '2012-04-21 11:32:58.113221', '2012-04-21 11:32:58.113221')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "comments" ("id","body","post_id","created_at","updated_at") VALUES (2, 'te digo', 1, '2012-04-21 12:04:05.677171', '2012-04-21 12:04:05.677171')[0m
+  [1m[35m (2.1ms)[0m  DROP TABLE "altered_comments"
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "comments" ADD "user_id" integer[0m
+  [1m[35m (8.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120421121448')
+  [1m[36m (110.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("comments")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_comments_on_post_id')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("posts")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-21 13:22:47 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (54.6ms)
+Completed 500 Internal Server Error in 252ms
+
+ActionView::Template::Error (undefined method `user' for #<Post:0x999321c>):
+    11: 
+    12: <% @posts.each do |post| %>
+    13:   <tr>
+    14:     <td><%= post.user %></td>
+    15:     <td><%= post.body %></td>
+    16:     <td><%= link_to 'Show', post %></td>
+    17:     <td><%= link_to 'Edit', edit_post_path(post) %></td>
+  app/views/posts/index.html.erb:14:in `block in _app_views_posts_index_html_erb__881732288_74831520'
+  app/views/posts/index.html.erb:12:in `each'
+  app/views/posts/index.html.erb:12:in `_app_views_posts_index_html_erb__881732288_74831520'
+  app/controllers/posts_controller.rb:9:in `index'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-21 13:22:56 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Compiled users.css  (24ms)  (pid 16570)
+Compiled application.css  (54ms)  (pid 16570)
+Compiled users.js  (546ms)  (pid 16570)
+Compiled application.js  (593ms)  (pid 16570)
+Completed 200 OK in 1252ms (Views: 1232.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:22:58 +0100
+Served asset /application.css - 304 Not Modified (399ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:22:58 +0100
+Served asset /posts.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:22:58 +0100
+Served asset /comments.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:22:58 +0100
+Served asset /home.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:22:58 +0100
+Served asset /scaffolds.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-21 13:22:59 +0100
+Served asset /users.css - 200 OK (33ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:22:59 +0100
+Served asset /jquery.js - 304 Not Modified (113ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:22:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:22:59 +0100
+Served asset /comments.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:22:59 +0100
+Served asset /home.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:22:59 +0100
+Served asset /posts.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-21 13:22:59 +0100
+Served asset /users.js - 200 OK (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:22:59 +0100
+Served asset /application.js - 304 Not Modified (105ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-21 13:25:00 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (67.4ms)
+  Rendered users/new.html.erb within layouts/application (768.1ms)
+Completed 200 OK in 1020ms (Views: 842.9ms | ActiveRecord: 51.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:04 +0100
+Served asset /application.css - 304 Not Modified (49ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:04 +0100
+Served asset /comments.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:04 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:04 +0100
+Served asset /scaffolds.css - 304 Not Modified (195ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:04 +0100
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:04 +0100
+Served asset /users.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:04 +0100
+Served asset /jquery.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:05 +0100
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:05 +0100
+Served asset /home.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:05 +0100
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:05 +0100
+Served asset /users.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:05 +0100
+Served asset /application.js - 304 Not Modified (33ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-21 13:25:12 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"umu4yRuMaXVeRh5IFqJL5AlnlgVLcym/KwEO/2BK7VU=", "user"=>{"name"=>"pepe"}, "commit"=>"Create User"}
+  [1m[36m (1.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (110.3ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 21 Apr 2012 12:25:12 UTC +00:00], ["name", "pepe"], ["updated_at", Sat, 21 Apr 2012 12:25:12 UTC +00:00]]
+  [1m[36m (39.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 163ms (ActiveRecord: 151.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-04-21 13:25:12 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (8.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 254ms (Views: 202.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:12 +0100
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:12 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:12 +0100
+Served asset /home.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /home.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /posts.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /users.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:13 +0100
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-21 13:25:18 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `user' for #<Post:0xa0c0f58>):
+    11: 
+    12: <% @posts.each do |post| %>
+    13:   <tr>
+    14:     <td><%= post.user %></td>
+    15:     <td><%= post.body %></td>
+    16:     <td><%= link_to 'Show', post %></td>
+    17:     <td><%= link_to 'Edit', edit_post_path(post) %></td>
+  app/views/posts/index.html.erb:14:in `block in _app_views_posts_index_html_erb__881732288_74831520'
+  app/views/posts/index.html.erb:12:in `each'
+  app/views/posts/index.html.erb:12:in `_app_views_posts_index_html_erb__881732288_74831520'
+  app/controllers/posts_controller.rb:9:in `index'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.6ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-21 13:25:40 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (1143.9ms)
+Completed 200 OK in 1567ms (Views: 1397.1ms | ActiveRecord: 35.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:43 +0100
+Served asset /application.css - 304 Not Modified (87ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:43 +0100
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:43 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:43 +0100
+Served asset /posts.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:43 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:43 +0100
+Served asset /users.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:43 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (68ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:44 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:44 +0100
+Served asset /comments.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:44 +0100
+Served asset /home.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:44 +0100
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:44 +0100
+Served asset /users.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:44 +0100
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-04-21 13:25:52 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (16.3ms)
+  Rendered posts/new.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 443ms (Views: 398.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:55 +0100
+Served asset /application.css - 304 Not Modified (111ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:55 +0100
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:55 +0100
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:55 +0100
+Served asset /scaffolds.css - 304 Not Modified (73ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:55 +0100
+Served asset /users.css - 304 Not Modified (911ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:25:56 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:56 +0100
+Served asset /jquery.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:57 +0100
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:57 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:57 +0100
+Served asset /posts.js - 304 Not Modified (41ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:57 +0100
+Served asset /application.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-21 13:25:57 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-21 13:26:09 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (39.5ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (63.2ms)
+Completed 200 OK in 256ms (Views: 208.3ms | ActiveRecord: 39.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /scaffolds.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /posts.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 13:26:10 +0100
+Served asset /application.js - 304 Not Modified (11ms)

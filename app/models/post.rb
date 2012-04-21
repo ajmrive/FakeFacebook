@@ -6,5 +6,5 @@ class Post < ActiveRecord::Base
   validates :body, :user, :presence => true
   
   has_many :comments
-  
+  belongs_to :user
 end

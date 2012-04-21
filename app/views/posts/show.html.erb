@@ -1,13 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>User:</b>
+  <h2>User:</h2>
   <%= @post.user %>
 </p>
 
 <p>
-  <b>Body:</b>
+  <h2>Body:</h2>
   <%= @post.body %>
+</p>
+
+<p>
+    <h2>Comentarios:</h2>
+    <hr>
+    <%= render @post.comments %>
 </p>
 
 <%= render 'comments/form' %>
